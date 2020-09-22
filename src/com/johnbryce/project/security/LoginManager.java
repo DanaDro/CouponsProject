@@ -10,7 +10,7 @@ public class LoginManager {
 
 	private static LoginManager instance = null;
 
-	public LoginManager() {
+	private LoginManager() {
 		
 	}
 
