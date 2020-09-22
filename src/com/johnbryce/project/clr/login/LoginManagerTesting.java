@@ -3,6 +3,7 @@ package com.johnbryce.project.clr.login;
 import java.sql.SQLException;
 
 import com.johnbryce.project.clr.TestInit;
+import com.johnbryce.project.clr.facade.CustomerFacadeTesting;
 import com.johnbryce.project.exception.NotExistException;
 import com.johnbryce.project.facade.AdministratorFacade;
 import com.johnbryce.project.facade.CompanyFacade;
@@ -28,7 +29,7 @@ public class LoginManagerTesting {
 		CompanyFacade companyFacade = (CompanyFacade) loginManager.login("Sahut Tari", "sahut5@gmail.com",
 				ClientType.COMPANY);
 		if (companyFacade != null) {
-			Ido.print(companyFacade.getCompanyCoupons());
+			Ido.print(companyFacade.getCompanyDetalis());
 		} else {
 			System.out.println("Facade is null");
 		}
@@ -36,7 +37,7 @@ public class LoginManagerTesting {
 		companyFacade = (CompanyFacade) loginManager.login("sahut5@gmail.com", "1111", ClientType.COMPANY);
 		System.out.println("Login successfully - Company usage example");
 		if (companyFacade != null) {
-			Ido.print(companyFacade.getCompanyCoupons());
+			Ido.print(companyFacade.getCompanyDetalis());
 		} else {
 			System.out.println("Facade is null");
 		}
@@ -44,7 +45,7 @@ public class LoginManagerTesting {
 		CustomerFacade customerFacade = (CustomerFacade) loginManager.login("daniel@gmail.com", "555",
 				ClientType.CUSTOMER);
 		if (customerFacade != null) {
-			Ido.print(customerFacade.getCustomersCoupons());
+			Ido.print(customerFacade.getCustomerDetalis());
 		} else {
 			System.out.println("Facade is null");
 		}
@@ -52,7 +53,7 @@ public class LoginManagerTesting {
 		customerFacade = (CustomerFacade) loginManager.login("danielram@gmail.com", "danielram", ClientType.CUSTOMER);
 		System.out.println("Login successfully - Customer usage example");
 		if (customerFacade != null) {
-			Ido.print(customerFacade.getCustomersCoupons());
+			Ido.print(customerFacade.getCustomerDetalis());
 		} else {
 			System.out.println("Facade is null");
 		}

@@ -45,9 +45,16 @@ public class TestInit {
 		Coupon coupon2 = new Coupon(1, Category.FOOD ,"In n Out", "best burger in California", Date.valueOf("2020-09-20"), Date.valueOf("2021-09-20"), 1000, 50.5, "Burger");
 		Coupon coupon3 = new Coupon(1, Category.ELECTRICITY, "Best Buy", "best computer", Date.valueOf("2020-08-30"), Date.valueOf("2020-09-30"), 100, 4000, "13''");
 		Coupon coupon4 = new Coupon(1, Category.FOOD, "Segev Restaurant", "Italian food", Date.valueOf("2020-09-09"), Date.valueOf("2020-09-30"), 0, 300, "pasta"); // amount - 0 for testing
+		Coupon coupon5 = new Coupon(2, Category.GAMES, "Snake", "90s game", Date.valueOf("2020-09-01"), Date.valueOf("2021-09-30"), 500, 10.99, "snake");
+		Coupon coupon6 = new Coupon(3, Category.CLOTH, "Adict", "Fasion Cloth", Date.valueOf("2020-08-01"), Date.valueOf("2021-08-30"), 1000, 300, "shirts");
+		Coupon coupon7 = new Coupon(4, Category.RESTAURANT, "Chin Chin", "Asian food for the family", Date.valueOf("2020-12-03"), Date.valueOf("2021-03-21"), 200, 200, "Sushi");
+		
 		coupons.addCoupon(coupon1);
 		coupons.addCoupon(coupon2);
 		coupons.addCoupon(coupon3);
 		coupons.addCoupon(coupon4);
+		coupons.addCoupon(coupon5);
+		coupons.addCoupon(coupon6);
+		coupons.addCoupon(coupon7);
 	}
 }
