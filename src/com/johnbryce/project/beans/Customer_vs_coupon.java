@@ -1,7 +1,5 @@
 package com.johnbryce.project.beans;
 
-import java.util.List;
-
 public class Customer_vs_coupon {
 
 	private int customer_id;

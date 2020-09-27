@@ -5,6 +5,8 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
+// @Ido Zehavy - thank you
+
 // v1.0.4
 // dont try printing list of primitives such as: String or Integer --- NO!
 // prints only classes like beans with attributes/fields

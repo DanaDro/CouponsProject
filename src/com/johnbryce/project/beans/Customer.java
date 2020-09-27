@@ -14,7 +14,6 @@ public class Customer {
 	private List<Coupon> coupons;
 	
 	public Customer() {
-		super();
 		// TODO Auto-generated constructor stub
 	}
 
